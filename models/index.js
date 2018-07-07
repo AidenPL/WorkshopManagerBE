@@ -1,6 +1,6 @@
 module.exports = {
-    company: require('./company'),
-    computer: require('./computer'),
-    endUser: require('./endUser')
+    company: require('./companyModel'),
+    computer: require('./computerModel'),
+    endUser: require('./endUserModel')
   };
   
