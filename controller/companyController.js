@@ -1,7 +1,7 @@
 const companyModel = require('../models/companyModel')
 
 function companies (req, res, next) {
-    companyModel.find()
+    companyModel.find().lean()
     .then(data => {
         res.send({ Company: data });
     })

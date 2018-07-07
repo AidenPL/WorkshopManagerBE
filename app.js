@@ -1,3 +1,5 @@
+if (!process.env.NODE_ENV) process.env.NODE_ENV = 'dev';
+
 const express = require('express');
 const app  = express();
 const bodyParser = require('body-parser');
