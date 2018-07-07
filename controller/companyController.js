@@ -1,8 +1,11 @@
 const companyModel = require('../models/companyModel')
 
 function companies (req, res, next) {
-
-    return res.status(200).send('Working')
+    companyModel.find()
+    .then(data => {
+        res.send({ Company: data });
+    })
+    .catch((err) => {console.log})
 }
 
 module.exports = {companies}

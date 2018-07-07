@@ -8,7 +8,8 @@ function seed(companyData, computerData, endUserData) {
         })
         .then(([companyDocs]) => {
             const endUserD = endUserData.map(endUser => {
-                const CompanyID = companyDocs.find((company) => company.Company_name === endUser.Company_name)._id
+
+                const CompanyID = companyDocs.find((company) => company.company_name === endUser.company_name)._id
                 return {...endUser, company_name: CompanyID}                
             })
             return Promise.all([endUser.insertMany(endUserD), companyDocs]);

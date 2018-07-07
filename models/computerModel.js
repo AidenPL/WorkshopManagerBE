@@ -25,4 +25,4 @@ const ComputerSchema = new Schema({
   }
 });
 
-module.exports = mongoose.model('comments', ComputerSchema);
+module.exports = mongoose.model('computer', ComputerSchema);
