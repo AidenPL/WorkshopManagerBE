@@ -7,7 +7,7 @@ const seed = require('../seed/seed');
 
 
 
-const {companyData, computerData, endUserData} = require('../seed/devData')
+const {companyData, computerData, endUserData} = require('../seed/testData')
 
 describe('API Tests', () => {
   let computerDocs, companyDocs, endUserDocs
@@ -40,7 +40,7 @@ describe('API Tests', () => {
         });
     });
 
-    describe('computer APIs', () => {
+    describe('Computer APIs', () => {
         describe('GET api/computer', () => {
             it('Return the correct computer', () => {
                 return request
@@ -49,7 +49,7 @@ describe('API Tests', () => {
                 .then((res) => {
                     expect(res.body.Computer[1].bay).to.eql(computerDocs[1].bay);
                     expect(res.body.Computer[2].ref).to.eql(computerDocs[2].ref);
-                    expect(res.body.Computer[3].issue).to.eql(computerDocs[3].issue);
+                    expect(res.body.Computer[0].issue).to.eql(computerDocs[0].issue);
                  })
             });
         });
@@ -62,7 +62,7 @@ describe('API Tests', () => {
                 .get(`/api/enduser/${companyDocs[0]._id}`)
                 .expect(200)
                 .then((res) => {
-                    expect(res.body.EndUsers[1].name).to.eql(endUserDocs[1].name);
+                    expect(res.body.EndUsers[0].name).to.eql(endUserDocs[0].name);
                     expect(res.body.EndUsers[0].contact_number).to.eql(endUserDocs[0].contact_number);
                  })
             });

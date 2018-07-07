@@ -1,0 +1,44 @@
+[
+    {
+        "company_name": "NorthCoders",
+        "name": "John",
+        "contact_number": "0192839202"
+    }, 
+
+    {
+        "company_name": "Western water",
+        "name": "David",
+        "contact_number": "01738273881"
+
+    },
+    {
+        "company_name": "Western water",
+        "name": "jason",
+        "contact_number": "01927382718"
+
+    },
+    {
+        "company_name": "North Sea",
+        "name": "Ellie",
+        "contact_number": "01927839287"
+
+    },
+    {
+        "company_name": "North Sea",
+        "name": "Becky",
+        "contact_number": "01736273822"
+
+    },
+    {
+        "company_name": "North Sea",
+        "name": "Sarah",
+        "contact_number": "01736272343"
+
+    },
+    {
+        "company_name": "North Sea",
+        "name": "Joe",
+        "contact_number": "01737282372"
+
+    }
+]
