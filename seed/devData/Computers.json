@@ -1,58 +1,52 @@
 [
     {
-        "Ref": "IT29102",
-        "Bay": "1",
-        "Issue": "Computer Wont Start",
-        "Current_Status": "Mem Testing",
-        "Name": "John",
-        "Contact Number": "0192839202"
+        "ref": "IT29102",
+        "bay": "1",
+        "issue": "Computer Wont Start",
+        "current_status": "Mem Testing",
+        "end_user": "John"
         
     }, 
     {
-        "Ref": "IT29103",
-        "Bay": "2",
-        "Issue": "Blue Screening",
-        "Current_Status": "HDD Test",
-        "Name": "David",
-        "Contact Number": "01738273881"
+        "ref": "IT29103",
+        "bay": "2",
+        "issue": "Blue Screening",
+        "current_status": "HDD Test",
+        "end_user": "David"
 
     },
     {
-        "Ref": "IT29104",
-        "Bay": "3",
-        "Issue": "Virus on Computer",
-        "Current_Status": "Anti Virus Running",
-        "Name": "jason",
-        "Contact Number": "01927382718"
+        "ref": "IT29104",
+        "bay": "3",
+        "issue": "Virus on Computer",
+        "current_status": "Anti Virus Running",
+        "end_user": "jason"
 
     },
 
     {
-        "Ref": "IT29105",
-        "Bay": "4",
-        "Issue": "SSD Upgrade",
-        "Current_Status": "Installing Windows",
-        "Name": "Louise",
-        "Contact Number": "01737283714"
+        "ref": "IT29105",
+        "bay": "4",
+        "issue": "SSD Upgrade",
+        "current_status": "Installing Windows",
+        "end_user": "Louise"
 
     },
     {
-        "Ref": "IT29106",
-        "Bay": "5",
-        "Issue": "SSD Upgrade",
-        "Current_Status": "Disassembly",
-        "Name": "Emma",
-        "Contact Number": "017362728372"
+        "ref": "IT29106",
+        "bay": "5",
+        "issue": "SSD Upgrade",
+        "current_status": "Disassembly",
+        "end_user": "Emma"
 
     },
 
     {
-        "Ref": "IT29107",
-        "Bay": "6",
-        "Issue": "Over Heating",
-        "Current_Status": "Disassembly of Fan",
-        "Name": "Megan",
-        "Contact Number": "01635462783"
+        "ref": "IT29107",
+        "bay": "6",
+        "issue": "Over Heating",
+        "current_status": "Disassembly of Fan",
+        "end_user": "Megan"
 
     }
 ]
