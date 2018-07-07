@@ -1,0 +1,58 @@
+[
+    {
+        "Ref": "IT29102",
+        "Bay": "1",
+        "Issue": "Computer Wont Start",
+        "Current_Status": "Mem Testing",
+        "Name": "John",
+        "Contact Number": "0192839202"
+        
+    }, 
+    {
+        "Ref": "IT29103",
+        "Bay": "2",
+        "Issue": "Blue Screening",
+        "Current_Status": "HDD Test",
+        "Name": "David",
+        "Contact Number": "01738273881"
+
+    },
+    {
+        "Ref": "IT29104",
+        "Bay": "3",
+        "Issue": "Virus on Computer",
+        "Current_Status": "Anti Virus Running",
+        "Name": "jason",
+        "Contact Number": "01927382718"
+
+    },
+
+    {
+        "Ref": "IT29105",
+        "Bay": "4",
+        "Issue": "SSD Upgrade",
+        "Current_Status": "Installing Windows",
+        "Name": "Louise",
+        "Contact Number": "01737283714"
+
+    },
+    {
+        "Ref": "IT29106",
+        "Bay": "5",
+        "Issue": "SSD Upgrade",
+        "Current_Status": "Disassembly",
+        "Name": "Emma",
+        "Contact Number": "017362728372"
+
+    },
+
+    {
+        "Ref": "IT29107",
+        "Bay": "6",
+        "Issue": "Over Heating",
+        "Current_Status": "Disassembly of Fan",
+        "Name": "Megan",
+        "Contact Number": "01635462783"
+
+    }
+]

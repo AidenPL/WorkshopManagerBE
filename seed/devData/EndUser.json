@@ -1,0 +1,101 @@
+[
+    {
+        "Company_name": "NorthCoders",
+        "Name": "John",
+        "Contact Number": "0192839202"
+    }, 
+    {
+        "Company_name": "NorthCoders",
+        "Name": "George",
+        "Contact Number": "0192839322"
+    }, 
+    {
+        "Company_name": "NorthCoders",
+        "Name": "Trever",
+        "Contact Number": "01923874928"
+    }, 
+    {
+        "Company_name": "Western water",
+        "Name": "Aiden",
+        "Contact Number": "01983739223"
+
+    },
+    {
+        "Company_name": "Western water",
+        "Name": "David",
+        "Contact Number": "01738273881"
+
+    },
+    {
+        "Company_name": "Western water",
+        "Name": "jason",
+        "Contact Number": "01927382718"
+
+    },
+    {
+        "Company_name": "North Sea",
+        "Name": "Ellie",
+        "Contact Number": "01927839287"
+
+    },
+    {
+        "Company_name": "North Sea",
+        "Name": "Becky",
+        "Contact Number": "01736273822"
+
+    },
+    {
+        "Company_name": "North Sea",
+        "Name": "Sarah",
+        "Contact Number": "01736272343"
+
+    },
+    {
+        "Company_name": "North Sea",
+        "Name": "Joe",
+        "Contact Number": "01737282372"
+
+    },
+    {
+        "Company_name": "Computer 4 Us",
+        "Name": "Louise",
+        "Contact Number": "01737283714"
+
+    },
+    {
+        "Company_name": "Computer 4 Us",
+        "Name": "Emma",
+        "Contact Number": "017362728372"
+
+    },
+    {
+        "Company_name": "Computer 4 Us",
+        "Name": "Mathew",
+        "Contact Number": "016372637281"
+
+    },
+    {
+        "Company_name": "Computer 4 Us",
+        "Name": "Bill",
+        "Contact Number": "017363728272"
+
+    },
+    {
+        "Company_name": "Pets are us",
+        "Name": "Brian",
+        "Contact Number": "015362536271"
+
+    }, 
+    {
+        "Company_name": "Pets are us",
+        "Name": "Alex",
+        "Contact Number": "01836372811"
+
+    },
+    {
+        "Company_name": "Pets are us",
+        "Name": "Megan",
+        "Contact Number": "01635462783"
+
+    }
+]
