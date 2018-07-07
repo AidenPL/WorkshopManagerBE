@@ -1,0 +1,22 @@
+{
+  "name": "workshopmanagerbe",
+  "version": "1.0.0",
+  "description": "Backend to a workshop management app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AidenPL/WorkshopManagerBE.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AidenPL/WorkshopManagerBE/issues"
+  },
+  "homepage": "https://github.com/AidenPL/WorkshopManagerBE#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
