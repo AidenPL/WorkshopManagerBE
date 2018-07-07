@@ -1,7 +1,11 @@
 const express = require('express');
 const router = express.Router();
-const {GetCompanys} = require('../controller/company')
+const companyRoute = require('./companyRoute')
+const computerRoute = require('./computerRoute')
+const endUserRoute = require('./endUserRoute')
 
-router.get('/', GetCompanys);
+router.use('/company', companyRoute);
+router.use('/computer', computerRoute);
+router.use('/enduser', endUserRoute);
 
 module.exports = router;
