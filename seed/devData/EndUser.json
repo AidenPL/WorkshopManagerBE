@@ -1,99 +1,99 @@
 [
     {
-        "company_name": "NorthCoders",
+        "company_id": "NorthCoders",
         "name": "John",
         "contact_number": "0192839202"
     }, 
     {
-        "company_name": "NorthCoders",
+        "company_id": "NorthCoders",
         "name": "George",
         "contact_number": "0192839322"
     }, 
     {
-        "company_name": "NorthCoders",
+        "company_id": "NorthCoders",
         "name": "Trever",
         "contact_number": "01923874928"
     }, 
     {
-        "company_name": "Western water",
+        "company_id": "Western water",
         "name": "Aiden",
         "contact_number": "01983739223"
 
     },
     {
-        "company_name": "Western water",
+        "company_id": "Western water",
         "name": "David",
         "contact_number": "01738273881"
 
     },
     {
-        "company_name": "Western water",
+        "company_id": "Western water",
         "name": "jason",
         "contact_number": "01927382718"
 
     },
     {
-        "company_name": "North Sea",
+        "company_id": "North Sea",
         "name": "Ellie",
         "contact_number": "01927839287"
 
     },
     {
-        "company_name": "North Sea",
+        "company_id": "North Sea",
         "name": "Becky",
         "contact_number": "01736273822"
 
     },
     {
-        "company_name": "North Sea",
+        "company_id": "North Sea",
         "name": "Sarah",
         "contact_number": "01736272343"
 
     },
     {
-        "company_name": "North Sea",
+        "company_id": "North Sea",
         "name": "Joe",
         "contact_number": "01737282372"
 
     },
     {
-        "company_name": "Computer 4 Us",
+        "company_id": "Computer 4 Us",
         "name": "Louise",
         "contact_number": "01737283714"
 
     },
     {
-        "company_name": "Computer 4 Us",
+        "company_id": "Computer 4 Us",
         "name": "Emma",
         "contact_number": "017362728372"
 
     },
     {
-        "company_name": "Computer 4 Us",
+        "company_id": "Computer 4 Us",
         "name": "Mathew",
         "contact_number": "016372637281"
 
     },
     {
-        "company_name": "Computer 4 Us",
+        "company_id": "Computer 4 Us",
         "name": "Bill",
         "contact_number": "017363728272"
 
     },
     {
-        "company_name": "Pets are us",
+        "company_id": "Pets are us",
         "name": "Brian",
         "contact_number": "015362536271"
 
     }, 
     {
-        "company_name": "Pets are us",
+        "company_id": "Pets are us",
         "name": "Alex",
         "contact_number": "01836372811"
 
     },
     {
-        "company_name": "Pets are us",
+        "company_id": "Pets are us",
         "name": "Megan",
         "contact_number": "01635462783"
 
