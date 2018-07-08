@@ -34,7 +34,19 @@ describe('API Tests', () => {
                 .get('/api/company')
                 .expect(200)
                 .then((res) => {
-                    expect(res.body.Company[0].company_name).to.eql(companyDocs[0].company_name);
+                    expect(res.body.Company[0].company_name).to.equal(companyDocs[0].company_name);
+                 })
+            });
+        });
+
+        describe('POST api/company', () => {
+            it('POST Correct Data', () => {
+                return request
+                .post('/api/company')
+                .send({company_name: "new company"})
+                .expect(201)
+                .then((res) => {
+                    expect(res.body.Company.company_name).to.equal('new company');
                  })
             });
         });
@@ -47,9 +59,9 @@ describe('API Tests', () => {
                 .get('/api/computer')
                 .expect(200)
                 .then((res) => {
-                    expect(res.body.Computer[1].bay).to.eql(computerDocs[1].bay);
-                    expect(res.body.Computer[2].ref).to.eql(computerDocs[2].ref);
-                    expect(res.body.Computer[0].issue).to.eql(computerDocs[0].issue);
+                    expect(res.body.Computer[1].bay).to.equal(computerDocs[1].bay);
+                    expect(res.body.Computer[2].ref).to.equal(computerDocs[2].ref);
+                    expect(res.body.Computer[0].issue).to.equal(computerDocs[0].issue);
                  })
             });
         });
@@ -62,8 +74,8 @@ describe('API Tests', () => {
                 .get(`/api/enduser/${companyDocs[0]._id}`)
                 .expect(200)
                 .then((res) => {
-                    expect(res.body.EndUsers[0].name).to.eql(endUserDocs[0].name);
-                    expect(res.body.EndUsers[0].contact_number).to.eql(endUserDocs[0].contact_number);
+                    expect(res.body.EndUsers[0].name).to.equal(endUserDocs[0].name);
+                    expect(res.body.EndUsers[0].contact_number).to.equal(endUserDocs[0].contact_number);
                  })
             });
         });
