@@ -79,6 +79,21 @@ describe('API Tests', () => {
                  })
             });
         });
+        describe('POST api/enduser', () => {
+            it('POST Correct Data', () => {
+                return request
+                .post('/api/enduser')
+                .send({
+                    company_id: "5b41edb787a4670c788c5659",
+                    name: "Alex",
+                    contact_number: "01836372811"
+                })
+                .expect(201)
+                .then((res) => {
+                    expect(res.body.EndUser.name).to.equal('Alex');
+                 })
+            });
+        });
     });
 
 });

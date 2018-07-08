@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const EndUserSchema = new Schema({
-  company_name: {
+  company_id: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'company',
     required: true
