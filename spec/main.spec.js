@@ -65,6 +65,26 @@ describe('API Tests', () => {
                  })
             });
         });
+
+        describe('POST api/computer', () => {
+            it('POST Correct Data', () => {
+                return request
+                .post('/api/computer')
+                .send({
+                    ref: "IT29103",
+                    bay: "2",
+                    issue: "Blue Screening",
+                    current_status: "HDD Test",
+                    end_user: "5b41ee6407c0910ca976c1b6"
+                })
+                .expect(201)
+                .then((res) => {
+                    expect(res.body.Computer.ref).to.equal('IT29103');
+                    expect(res.body.Computer.bay).to.equal('2');
+                    expect(res.body.Computer.issue).to.equal('Blue Screening');
+                 })
+            });
+        });
     });
 
     describe('EndUser APIs', () => {
