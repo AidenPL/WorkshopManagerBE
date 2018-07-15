@@ -19,5 +19,16 @@ function postCompany(req, res, next) {
     .catch((err) => console.log(err))
 }
 
+function updateCompany(req, res, next) {
 
-module.exports = { companies, postCompany }
+    companyModel.findByIdAndUpdate(req.params.companyid, ({
+        company_name: req.body.company_name
+    }))
+    .then(company => {
+        return res.status(201).send({Company: company})
+    })
+    .catch((err) => console.log(err))
+}
+
+
+module.exports = { companies, postCompany, updateCompany }
