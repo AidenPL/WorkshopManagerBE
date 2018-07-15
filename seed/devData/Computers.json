@@ -4,7 +4,9 @@
         "bay": "1",
         "issue": "Computer Wont Start",
         "current_status": "Mem Testing",
-        "end_user": "John"
+        "end_user": "NorthCoders",
+        "date": "12/08/18", 
+        "stage": "1"
         
     }, 
     {
@@ -12,7 +14,9 @@
         "bay": "2",
         "issue": "Blue Screening",
         "current_status": "HDD Test",
-        "end_user": "David"
+        "end_user": "NorthCoders",
+        "date": "12/08/18", 
+        "stage": "3"
 
     },
     {
@@ -20,7 +24,9 @@
         "bay": "3",
         "issue": "Virus on Computer",
         "current_status": "Anti Virus Running",
-        "end_user": "jason"
+        "end_user": "Western water",
+        "date": "12/08/18", 
+        "stage": "3"
 
     },
 
@@ -29,7 +35,9 @@
         "bay": "4",
         "issue": "SSD Upgrade",
         "current_status": "Installing Windows",
-        "end_user": "Louise"
+        "end_user": "North Sea",
+        "date": "12/08/18", 
+        "stage": "2"
 
     },
     {
@@ -37,7 +45,9 @@
         "bay": "5",
         "issue": "SSD Upgrade",
         "current_status": "Disassembly",
-        "end_user": "Emma"
+        "end_user": "Computer 4 Us",
+        "date": "12/08/18", 
+        "stage": "3"
 
     },
 
@@ -46,7 +56,9 @@
         "bay": "6",
         "issue": "Over Heating",
         "current_status": "Disassembly of Fan",
-        "end_user": "Megan"
+        "end_user": "Pets are us",
+        "date": "12/08/18", 
+        "stage": "2"
 
     }
 ]

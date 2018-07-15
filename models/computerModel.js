@@ -20,7 +20,15 @@ const ComputerSchema = new Schema({
   },
   end_user: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'endUser',
+    ref: 'company',
+    required: true
+  },
+  date: {
+    type: String,
+    required: true
+  },
+  stage: {
+    type: String,
     required: true
   }
 });

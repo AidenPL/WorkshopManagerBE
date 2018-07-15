@@ -6,19 +6,19 @@ function seed(companyData, computerData, endUserData) {
         .then (() => {
           return Promise.all([company.insertMany(companyData)])  
         })
+        // .then(([companyDocs]) => {
+        //     const endUserD = endUserData.map(endUser => {
+        //         const CompanyID = companyDocs.find((company) => company.company_name === endUser.company_id)._id
+        //         return {...endUser, company_id: CompanyID}                
+        //     })
+        //     return Promise.all([endUser.insertMany(endUserD), companyDocs]);
+        // })
         .then(([companyDocs]) => {
-            const endUserD = endUserData.map(endUser => {
-                const CompanyID = companyDocs.find((company) => company.company_name === endUser.company_id)._id
-                return {...endUser, company_id: CompanyID}                
-            })
-            return Promise.all([endUser.insertMany(endUserD), companyDocs]);
-        })
-        .then(([endUserDocs, companyDocs]) => {
             const ComputerD = computerData.map(computer => {
-                const EndUserID = endUserDocs.find((endUser) => endUser.name === computer.end_user)._id
-                return {...computer, end_user: EndUserID}                
+                const CompanyID = companyDocs.find((company) => company.company_name === computer.end_user)._id
+                return {...computer, end_user: CompanyID}                
             })
-            return Promise.all([computer.insertMany(ComputerD), companyDocs, endUserDocs]);
+            return Promise.all([computer.insertMany(ComputerD), companyDocs]);
         })
     
 }
