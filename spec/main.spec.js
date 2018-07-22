@@ -7,15 +7,15 @@ const seed = require('../seed/seed');
 
 
 
-const {companyData, computerData, endUserData} = require('../seed/testData')
+const {companyData, computerData, commentData} = require('../seed/testData')
 
 describe('API Tests', () => {
-  let computerDocs, companyDocs, endUserDocs
+  let computerDocs, companyDocs, commentDocs
   beforeEach(function () {
     this.timeout(6000);
-    return seed(companyData, computerData, endUserData)
+    return seed(companyData, computerData, commentData)
       .then((data) => {
-        [computerDocs, companyDocs, endUserDocs] = data
+        [commentDocs, computerDocs, companyDocs] = data
       });
   });
 
@@ -87,30 +87,30 @@ describe('API Tests', () => {
         });
     });
 
-    describe('EndUser APIs', () => {
-        describe('GET api/enduser/:companyID', () => {
-            it('Return the correct EndUser', () => {
+    describe('Comment APIs', () => {
+        describe('GET api/comment/:computer_id', () => {
+            it('Return the correct comments', () => {
                 return request
-                .get(`/api/enduser/${companyDocs[0]._id}`)
+                .get(`/api/comment/${companyDocs[0]._id}`)
                 .expect(200)
                 .then((res) => {
-                    expect(res.body.EndUsers[0].name).to.equal(endUserDocs[0].name);
-                    expect(res.body.EndUsers[0].contact_number).to.equal(endUserDocs[0].contact_number);
+                    expect(res.body.Comments[0].comment).to.equal(endUserDocs[0].name);
+                    expect(res.body.Comments[0].date).to.equal(endUserDocs[0].contact_number);
                  })
             });
         });
-        describe('POST api/enduser', () => {
+        describe('POST api/comment', () => {
             it('POST Correct Data', () => {
                 return request
-                .post('/api/enduser')
+                .post('/api/comment')
                 .send({
-                    company_id: "5b41edb787a4670c788c5659",
-                    name: "Alex",
-                    contact_number: "01836372811"
+                    computer_id: "5b41edb787a4670c788c5659",
+                    comment: "Alex",
+                    date: "01836372811"
                 })
                 .expect(201)
                 .then((res) => {
-                    expect(res.body.EndUser.name).to.equal('Alex');
+                    expect(res.body.Comment.name).to.equal('Alex');
                  })
             });
         });
