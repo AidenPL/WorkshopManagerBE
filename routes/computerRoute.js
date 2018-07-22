@@ -1,12 +1,12 @@
 const express = require('express');
 const router = express.Router();
-const {computers, postEndUser, computerById, UpdateComputer} = require('../controller/computersController')
+const {computers, postComputer, computerById, UpdateComputer} = require('../controller/computersController')
 
 router.get('/', computers);
 
 router.get('/:computerID', computerById)
 
-router.post('/', postEndUser)
+router.post('/', postComputer)
 
 router.put('/:computerID', UpdateComputer)
 

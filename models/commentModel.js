@@ -1,20 +1,20 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const EndUserSchema = new Schema({
-  company_id: {
+const commentSchema = new Schema({
+  computer_id: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'company',
+    ref: 'computer',
     required: true
   },
-  name: {
+  comment: {
     type: String,
     required: true
   },
-  contact_number: {
+  date: {
     type: String,
     required: true
   }
 });
 
-module.exports = mongoose.model('endUser', EndUserSchema);
+module.exports = mongoose.model('comment', commentSchema);
