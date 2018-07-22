@@ -5,7 +5,7 @@ const app  = express();
 const bodyParser = require('body-parser');
 const mainRouter = require('./routes/apiRouter');
 const mongoose = require('mongoose');
-const dburl = require('./config').dburl
+const dburl = process.env.DATABASE_URL || require('./config').dburl
 
 mongoose.connect(dburl, { useNewUrlParser: true }).then(() => {
 })
