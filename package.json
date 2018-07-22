@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha spec",
+    "start": "node listen.js",
+    "dev": "nodemon listen.js",
+    "seed:prod": "NODE_ENV=production node seed/devseed.js",
     "devseed": "NODE_ENV=dev node seed/devseed.js"
   },
   "repository": {
